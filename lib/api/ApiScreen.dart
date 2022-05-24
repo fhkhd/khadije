@@ -48,13 +48,10 @@ class _ApiScreenState extends State<ApiScreen> {
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
             childAspectRatio: 1 / 2,
-            // crossAxisSpacing: 20,
-            // mainAxisSpacing: 20
         ),
         itemCount: data == null? 0 : data.length,
         itemBuilder: (BuildContext context, i){
           return GridTile(
-            // header: new Text(data[i]["title"]),
             child: Card(
               child: Center(
                 child: Column(
@@ -69,7 +66,6 @@ class _ApiScreenState extends State<ApiScreen> {
                       fontWeight: FontWeight.bold,
                     ),
                     textAlign: TextAlign.center,),
-                    // Text(data[i]["excerpt"]),
                   ],
                 ),
               ),
@@ -80,66 +76,9 @@ class _ApiScreenState extends State<ApiScreen> {
               ),
               elevation: 0,
             )
-            // footer: new Text(data[i]["excerpt"]),
-            // title: new Text(data[i]["title"]),
-            // subtitle: new Text(data[i]["excerpt"]),
-            // leading: new CircleAvatar(
-            //   backgroundImage:
-            //   new NetworkImage(data[i]["file"]["main"]),
-            // ),
           );
         },
       ),
     );
   }
-
-
-  // Card generateItem(Product product,context){
-  //   return Card(
-  //     child: InkWell(
-  //       onTap: (){
-  //         // Navigator.of(context).push(MaterialPageRoute(
-  //         //     builder: (context) => DescriptionPage(product)
-  //         // ));
-  //       },
-  //       child: Center(
-  //         child: Column(
-  //           mainAxisAlignment: MainAxisAlignment.center,
-  //           children: <Widget>[
-  //             Container(
-  //               width: 100,
-  //               height: 100,
-  //               child: Image.network(
-  //                   data[i]["file"]["main"]
-  //                   ),
-  //             ),
-  //             Text(
-  //               ,
-  //               style: TextStyle(
-  //                 fontFamily: "Vazir",
-  //                 color: Colors.pink,
-  //                 fontSize: 15,
-  //               ),
-  //             ),
-  //             Text(
-  //               ,
-  //               style: TextStyle(
-  //                 fontFamily: "Vazir",
-  //                 color: Colors.black45,
-  //                 fontSize: 15,
-  //               ),
-  //             )
-  //           ],
-  //         ),
-  //       ),
-  //     ),
-  //     shape: RoundedRectangleBorder(
-  //         borderRadius: BorderRadius.all(
-  //             Radius.circular(30)
-  //         )
-  //     ),
-  //     elevation: 10,
-  //   );
-  // }
-
 }

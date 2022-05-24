@@ -5,7 +5,6 @@ import 'main.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class BottomNavigator extends StatelessWidget {
-  // const BottomNavigator({Key? key}) : super(key: key);
   WebViewController _conttroller;
 
   BottomNavigator();

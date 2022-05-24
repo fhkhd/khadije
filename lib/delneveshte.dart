@@ -17,7 +17,6 @@ class _DelneveshteState extends State<Delneveshte> {
   Widget build(BuildContext context) {
     return Scaffold(
       body:       RefreshIndicator(
-        // onRefresh: () async => Future.delayed(Duration(seconds: 3)),
           onRefresh: () => _controller.reload(),
           child:
           Stack(
@@ -30,7 +29,6 @@ class _DelneveshteState extends State<Delneveshte> {
                   },
                   onPageFinished: (finish) {
                     setState(() {
-                      // myModel.stopLoading();
                       isLoading = false;
                     });
                   },
@@ -44,19 +42,3 @@ class _DelneveshteState extends State<Delneveshte> {
   }
 }
 
-
-
-// WebView(
-// javascriptMode: JavascriptMode.unrestricted,
-// gestureRecognizers: Set()
-// ..add(Factory<VerticalDragGestureRecognizer>(
-// () => VerticalDragGestureRecognizer())),
-// gestureNavigationEnabled: true,
-// initialUrl: 'https://khadije.com/delneveshte',
-// onWebViewCreated: (controller){
-// this.conttroller = controller;
-// },
-// onPageStarted: (url){
-// print('New website: $url');
-// },
-// ),

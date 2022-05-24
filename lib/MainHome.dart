@@ -23,7 +23,6 @@ class _HazratKhadijeState extends State<HazratKhadije> {
     final List<Widget> _tabList =[
       HomeScreen(),
       Delneveshte(),
-      // ApiClass(),
       ApiScreen(),
     ];
     return Scaffold(
@@ -59,45 +58,3 @@ class _HazratKhadijeState extends State<HazratKhadije> {
     );
   }
 }
-
-// Stack(
-// children: [
-// Padding(
-// padding: const EdgeInsets.all(30.0),
-// child: Align(
-// alignment: Alignment(0.0,1.0),
-// child: ClipRRect(
-// borderRadius: BorderRadius.all(
-// Radius.circular(30.0),
-// ),
-// child: BottomNavigationBar(
-// selectedItemColor: HexColor('5e80c4'),
-// unselectedItemColor: Colors.grey,
-// showSelectedLabels: true,
-// showUnselectedLabels: false,
-// backgroundColor: HexColor('011350'),
-// currentIndex: _pageIndex,
-// onTap: (int index) {
-// setState(() {
-// _pageIndex = index;
-// });
-// },
-// items: [
-// BottomNavigationBarItem(
-// icon: Icon(Icons.home_filled),
-// label: "صفحه اصلی"
-// ),
-// BottomNavigationBarItem(
-// icon: Icon(Icons.favorite),
-// label: "دل نوشته",
-// ),
-// BottomNavigationBarItem(
-// icon: Icon(Icons.search),
-// label: "جستجو"
-// ),
-// ],
-// ),
-// ),
-// ),)
-// ],
-// )
