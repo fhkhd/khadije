@@ -47,7 +47,7 @@ class _ApiScreenState extends State<ApiScreen> {
       body: new GridView.builder(
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
-            childAspectRatio: 3 / 2,
+            childAspectRatio: 1 / 2,
             // crossAxisSpacing: 20,
             // mainAxisSpacing: 20
         ),
